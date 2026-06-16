@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    background: white;
+    color:black;
+    padding-top: 80px;
+}
+
+
+
+header{
+    background:white;
+    color:black;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+  width: 50px;
+  cursor: pointer;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap: 20px;
+}
+
+nav a{
+    color:black;
+    text-decoration:none;
+    font-size: 14px;
+}
+
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    background:#f5f5f7;
+
+    margin-bottom:10px;
+}
+
+.hero-content{
+    margin-bottom:40px;
+}
+
+.hero-content h1{
+    font-size:56px;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.learnmore,
+.shopiphone,
+.shop{
+    padding:12px 24px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.learnmore{
+    background:#0071e3;
+    color:white;
+}
+
+.shopiphone,
+.shop{
+    background:white;
+    color:#0071e3;
+    border:1px solid #0071e3;
+}
+
+
+.hero-image img{
+    width:700px;
+    max-width:100%;
+}
+
+footer{
+    background: #f5f5f7;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #d2d2d7;
+}
+
+footer p{
+    color: #6e6e73;
+    font-size: 14px;
+}
+
+@media(max-width:768px) {
+    .footer container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
